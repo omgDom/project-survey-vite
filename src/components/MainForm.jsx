@@ -33,11 +33,11 @@ export const MainForm = () => {
       const submitForm = () => {
         console.log(formData)
         const formattedData = `
-        Name: ${formData.name}
-        Age: ${formData.age}
-        Favorite Operating System: ${formData.favOS}
-        The kind of developer you are: ${formData.devKind}
-        Your motivation to become a dev was: ${formData.motivation}
+        Name - ${formData.name}
+        Age - ${formData.age}
+        Favorite Operating System - ${formData.favOS}
+        You are a - ${formData.devKind}
+        Motivation to become a dev - ${formData.motivation}
         `;
         alert(formattedData);
       };
