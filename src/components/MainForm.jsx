@@ -45,8 +45,8 @@ export const MainForm = () => {
 
   return (
     <div>
-      <div className="progress-container" style={{ display: submitted ? "none" : "block" }}>
-        <div className="progress-bar" style={{ width: `${progressBarWidth}%` }}></div>
+      <div className="progressContainer" style={{ display: submitted ? "none" : "block" }}>
+        <div className="progressBar" style={{ width: `${progressBarWidth}%` }}></div>
       </div>
 
       <h1>Project Survey</h1>
@@ -74,7 +74,7 @@ export const MainForm = () => {
         </div>
       )}
 
-      <div className="form-btn">
+      <div className="formBtn">
         {currentStep > 1 && !submitted && (
           <button className="btn" onClick={prevStep}>
             Back

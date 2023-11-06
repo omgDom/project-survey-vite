@@ -1,7 +1,7 @@
 export const Motivation = ({ value, updateFormData }) => {
   const userMot = (e) => updateFormData("motivation", e.target.value);
   return (
-    <div className="motivation-form">
+    <div className="motivationForm">
       <p>What <b>motivated</b> you to become a developer?</p>
         <form value={value}>
 

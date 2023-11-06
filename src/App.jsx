@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <body>
       <div className="container">
-        <div className="main-container">
+        <div className="mainContainer">
           <MainForm />
         </div>
       </div>

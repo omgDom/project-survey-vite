@@ -14,7 +14,7 @@ export const Age = ({ value, updateFormData }) => {
   };
 
   return (
-    <div className="age-form" style={customStyles}>
+    <div className="ageForm" style={customStyles}>
       <input type="text" required="required" value={value} onChange={ageInput} />
       <span>Age</span>
       <i></i>

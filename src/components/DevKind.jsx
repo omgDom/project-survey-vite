@@ -1,7 +1,7 @@
 export const DevKind = ({ updateFormData, value }) => {
   const chooseDev = (e) => updateFormData("devKind", e.target.value);
   return (
-    <div className="kind-of-dev-form">
+    <div className="devKindForm">
       <label>What kind of developer are you?</label>
       <select value={value} onChange={chooseDev}>
         <option>Select</option>

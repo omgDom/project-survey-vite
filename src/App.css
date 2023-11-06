@@ -10,10 +10,10 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    overflow: hidden;
     height: 100%;
 }
 
@@ -28,7 +28,7 @@ body {
     padding: 4em 0 0 3em;
 }
 
-.main-container {
+.mainContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,14 +64,14 @@ h4 {
 }
 
 /* Progress bar */
-.progress-container {
+.progressContainer {
     width: 100%;
     height: 3px;
     background: var(--color);
     position: relative;
     border-radius: 10px;
   }
-  .progress-bar {
+  .progressBar {
     height: 100%;
     width: 0;
     background: var(--complete);
@@ -80,7 +80,7 @@ h4 {
   }
 
 /* Buttons */
-.form-btn {
+.formBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,13 +174,13 @@ h4 {
 }
 
 /* Name form */
-.name-form {
+.nameForm {
     position: relative;
     width: 100%;
     display: flex;
 
 }
-.name-form input {
+.nameForm input {
     width: 100%;
     position: relative;
     padding: 6px 8px;
@@ -193,7 +193,7 @@ h4 {
     letter-spacing: .05em;
     z-index: 2;
 }
-.name-form span {
+.nameForm span {
     position: absolute;
     left: 0;
     padding: 10px 0;
@@ -204,12 +204,12 @@ h4 {
     letter-spacing: .05em;
     color: var(--color);
 }
-.name-form input:valid ~ span,
-.name-form input:focus ~ span {
+.nameForm input:valid ~ span,
+.nameForm input:focus ~ span {
     font-size: .85em;
     transform: translateY(-32px);
 }
-.name-form i {
+.nameForm i {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -222,19 +222,19 @@ h4 {
     border-radius: 8px;
     pointer-events: none;
 }
-.name-form input:valid ~ i,
-.name-form input:focus ~ i {
+.nameForm input:valid ~ i,
+.nameForm input:focus ~ i {
     height: 100%;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Age form */
-.age-form {
+.ageForm {
     position: relative;
     width: 100%;
     display: flex;
 }
-.age-form input {
+.ageForm input {
     width: 100%;
     position: relative;
     padding: 6px 8px;
@@ -247,7 +247,7 @@ h4 {
     letter-spacing: .05em;
     z-index: 2;
 }
-.age-form span {
+.ageForm span {
     position: absolute;
     left: 0;
     padding: 10px 0;
@@ -258,12 +258,12 @@ h4 {
     letter-spacing: .05em;
     color: var(--color);
 }
-.age-form input:valid ~ span,
-.age-form input:focus ~ span {
+.ageForm input:valid ~ span,
+.ageForm input:focus ~ span {
     font-size: .85em;
     transform: translateY(-32px);
 }
-.age-form i {
+.ageForm i {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -276,39 +276,39 @@ h4 {
     border-radius: 8px;
     pointer-events: none;
 }
-.age-form input:valid ~ i,
-.age-form input:focus ~ i {
+.ageForm input:valid ~ i,
+.ageForm input:focus ~ i {
     height: 100%;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
-.age-form input[type="number"] {
+.ageForm input[type="number"] {
     -webkit-appearance: none;
     -moz-appearance: textfield;
     appearance: textfield;
   }
-  .age-form input[type="number"]::-webkit-inner-spin-button,
-  .age-form input[type="number"]::-webkit-outer-spin-button {
+  .ageForm input[type="number"]::-webkit-inner-spin-button,
+  .ageForm input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: inner-spin-button;
     -webkit-transition: opacity .1s 600ms ease-in;
   }
-  .age-form input[type="number"]:focus::-webkit-inner-spin-button,
-  .age-form input[type="number"]:focus::-webkit-outer-spin-button {
+  .ageForm input[type="number"]:focus::-webkit-inner-spin-button,
+  .ageForm input[type="number"]:focus::-webkit-outer-spin-button {
     opacity: 1;
   }
 
   /* Kind of dev form */
-  .kind-of-dev-form {
+  .devKindForm {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 16px;
   }
-  .kind-of-dev-form label {
+  .devKindForm label {
     font-size: 1.4em;
     font-weight: 600;
   }
-  .kind-of-dev-form select {
+  .devKindForm select {
     padding: 0 10px;
     height: 2em;
     width: 56%;
@@ -320,39 +320,39 @@ h4 {
   }
 
   /* Favorite OS form */
-  .favOS-form {
+  .favOSForm {
     margin-bottom: .5em;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .favOS-form label {
+  .favOSForm label {
     margin-left: .5em;
   }
-  .favOS-form p {
+  .favOSForm p {
     font-size: 1.4em;
     font-weight: 600;
     margin-bottom: .6em;
   }
-  .favOS-form input {
+  .favOSForm input {
     margin-bottom: .6em;
   }
 
   /* Motivation form */
-  .motivation-form {
+  .motivationForm {
     margin-bottom: .5em;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .motivation-form input {
+  .motivationForm input {
     margin-bottom: .6em;
   }
-  .motivation-form label {
+  .motivationForm label {
     margin-left: .5em;
     font-size: 1em;
   }
-  .motivation-form p {
+  .motivationForm p {
     font-size: 1.4em;
     font-weight: 600;
     margin-bottom: .6em;
@@ -363,7 +363,7 @@ h4 {
   .container {
     padding: 2em 0;
   }
-  .main-container {
+  .mainContainer {
     width: 70%;
     height: 70%;
     margin: auto;
@@ -373,7 +373,7 @@ h4 {
   .container {
     padding: 2em 0;
   }
-  .main-container {
+  .mainContainer {
     width: 90%;
     height: 90%;
     margin: auto;

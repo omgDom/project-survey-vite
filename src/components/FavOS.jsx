@@ -1,7 +1,7 @@
 export const FavOS = ({ value, updateFormData }) => {
   const userFav = (e) => updateFormData("favOS", e.target.value);
   return (
-    <div className="favOS-form">
+    <div className="favOSForm">
       <p>What is your preferred operating system?</p>
       <form value={value}>
 

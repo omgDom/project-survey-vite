@@ -14,7 +14,7 @@ export const Name = ({ value, updateFormData }) => {
   };
 
   return (
-    <div className="name-form" style={customStyles}>
+    <div className="nameForm" style={customStyles}>
       <input type="text" required="required" value={value} onChange={userName} />
       <span>Name</span>
       <i></i>
